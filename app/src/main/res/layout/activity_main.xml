@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/actionBarOfHome"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/status"
+        android:gravity="center"
+        android:elevation="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Festival Post Maker"
+            android:textSize="18sp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionBarOfHome">
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/diwaliFest"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardPreventCornerOverlap="true"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/diwali1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diwali"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginTop="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ganeshChaturthiFest"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/ganesha1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ganesh Chaturthi"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginTop="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/holiFest"
+                android:layout_below="@id/diwaliFest"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FEEFE0"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/holi1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Holi"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginTop="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/navratriFest"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/ganeshChaturthiFest"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FAF7F0"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/navratri1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Navratri"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginTop="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dussehraFest"
+                android:layout_below="@id/holiFest"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#F2E5C4"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/dussehra1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dussehra"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginTop="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/janmastamiFest"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/navratriFest"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FEFEFE"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/janmastami1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Janmashtami"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginTop="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shivratriFest"
+                android:layout_below="@id/dussehraFest"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#E2E2E2"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/shivratri1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maha ShivRatri"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginTop="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/makarsankrantiFest"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/janmastamiFest"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FEFEFE"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/makar_shankranti1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makar Sankranti"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginTop="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rakshaBandhanFest"
+                android:layout_below="@id/shivratriFest"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FEFEFE"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/raksha_bandhan1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Raksha Bandhan"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginTop="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ramnavamiFest"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/makarsankrantiFest"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FBFBFB"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/ram_navami1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ram Navami"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginTop="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

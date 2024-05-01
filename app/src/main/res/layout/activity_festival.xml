@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FestivalActivity">
+
+    <LinearLayout
+        android:id="@+id/actionBarOfFestivalPage"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/status"
+        android:gravity="center"
+        android:elevation="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Festival Post Maker"
+            android:textSize="18sp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_below="@id/actionBarOfFestivalPage">
+
+        <RelativeLayout
+            android:id="@+id/firstImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/firstImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:elevation="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_launcher_background"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/moreImage"
+            android:layout_below="@id/firstImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtMoreImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:text="More Images"/>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtMoreImage"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/moreImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/secondImage"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:elevation="15dp"
+                android:src="@drawable/ic_launcher_background"/>
+
+
+            <ImageView
+                android:id="@+id/thirdImage"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:elevation="15dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <ImageView
+                android:id="@+id/fourthImage"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="15dp"
+                android:elevation="15dp"
+                android:layout_below="@id/secondImage"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <ImageView
+                android:id="@+id/fifthImage"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_below="@id/thirdImage"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:elevation="15dp"
+                android:src="@drawable/ic_launcher_background"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

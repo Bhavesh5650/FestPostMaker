@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".PostEditActivity">
+
+    <LinearLayout
+        android:id="@+id/actionBarOfEditPage"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/status"
+        android:gravity="center"
+        android:elevation="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Festival Post Maker"
+            android:textSize="18sp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/actionBarOfEditPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:id="@+id/pageImageLayout"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/editPageImage"
+                android:layout_width="380dp"
+                android:layout_height="380dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:id="@+id/txtImageCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Company"
+                android:layout_alignEnd="@id/editPageImage"
+                android:layout_margin="10dp" />
+            <TextView
+                android:id="@+id/txtImageWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Website"
+                android:layout_margin="10dp"
+                android:layout_alignBottom="@id/editPageImage"/>
+
+            <TextView
+                android:id="@+id/txtImagePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Phone No"
+                android:layout_margin="10dp"
+                android:layout_alignEnd="@id/editPageImage"
+                android:layout_alignBottom="@id/editPageImage"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editingOption"
+            android:layout_below="@id/pageImageLayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtEditing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editing"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/editDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEditing"/>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/editDivider"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/editingInformationBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/dialog_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_person_24"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/editingFontStyleBtn"
+                    android:layout_toEndOf="@id/editingInformationBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/dialog_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_abc_24"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/editingFontColorBtn"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toEndOf="@id/editingFontStyleBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/dialog_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_format_color_text_24"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/editingFontSizeBtn"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toEndOf="@id/editingFontColorBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/dialog_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_format_size_24"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/generateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Generate"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:elevation="15dp"
+        android:backgroundTint="@color/status"/>
+
+</RelativeLayout>
